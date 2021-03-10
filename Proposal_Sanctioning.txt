@@ -9,3 +9,6 @@ administratative approval date. => But while selecting the Sanction date, its al
 
 [min]="sanctionedDate"
 
+
+date today
+
