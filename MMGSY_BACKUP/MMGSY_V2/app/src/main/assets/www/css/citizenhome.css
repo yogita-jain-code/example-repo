@@ -1,0 +1,90 @@
+		.white {
+			color: white;
+			padding:10px 0 10px 0 !important;
+			top:-10px !important;
+		}
+
+		.btn-lg {
+			font-size: 30px;
+			line-height: 1.33;
+			border-radius: 6px;
+		}
+
+		.box > .icon {
+			text-align: center;
+			position: relative;
+		}
+
+		.box > .icon > .image {
+			position: relative;
+			margin: auto;
+			width: 125px;
+			height: 55px;
+			border: 2px solid white;
+			line-height: 88px;
+			border-radius: 50%;
+			background: #2E5779;
+			vertical-align: middle;
+		}
+
+		.box > .icon:hover > .image {
+			border: 3px solid #F9C232;
+		}
+
+		.box > .icon > .image > i {
+			font-size: 40px !important;
+			color: #fff !important;
+		}
+
+		.box > .icon:hover > .image > i {
+			color: white !important;
+		}
+
+		.box > .icon > .info {
+			margin-top: -24px;
+			background: rgba(0,0,0,.075);
+			border: 1px solid #e0e0e0;
+			padding: 4px 0 0px 0;
+		}
+
+			.box > .icon > .info > h4.title {
+				color: #222;
+				font-weight: 500;
+			}
+			
+			.title{
+			font-size:18px !important;
+			}
+
+			.box > .icon > .info > p {
+				color: #666;
+				line-height: 1.5em;
+				margin: 20px;
+			}
+			
+			
+
+		.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
+			color: #222;
+		}
+
+		.box > .icon > .info > .more a {
+			color: #222;
+			line-height: 12px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+
+		.box > .icon:hover > .info > .more > a {
+			color: #000;
+			padding: 6px 8px;
+			border-bottom: 4px solid black;
+		}
+
+		.box .space {
+			height: 30px;
+		}
+		
+		#imageCountDiv{
+			text-align:center;color:#2E5779;font-style:italic;font-size:16px;
+		}

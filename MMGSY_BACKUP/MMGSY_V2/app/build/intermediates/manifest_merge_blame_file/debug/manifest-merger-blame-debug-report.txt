@@ -1,0 +1,336 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cdac.egov.mmgsy"
+4    android:versionCode="1"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:175:5-81
+11-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:175:22-78
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:176:5-67
+12-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:176:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:177:5-79
+13-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:177:22-76
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:178:5-75
+14-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:178:22-72
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:179:5-69
+15-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:179:22-66
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:180:5-79
+16-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:180:22-76
+17    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+17-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:181:5-79
+17-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:181:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:182:5-81
+18-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:182:22-78
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:183:5-81
+19-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:183:22-78
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:184:5-65
+20-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:184:22-62
+21
+22    <uses-feature android:name="android.hardware.camera" />
+22-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:186:5-60
+22-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:186:19-57
+23
+24    <application
+24-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:7:5-173:19
+25        android:name="common.MyCrashApplication"
+25-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:8:9-49
+26        android:allowBackup="true"
+26-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:9:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] C:\Users\yogitaj\.gradle\caches\transforms-2\files-2.1\80f58724caaf330e74c3000cc6797977\core-1.1.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@drawable/ic_launcher"
+29-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:10:9-45
+30        android:label="@string/app_name"
+30-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:11:9-41
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:12:9-40
+33        <service
+33-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:13:9-15:40
+34            android:name="common.SynMasterData"
+34-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:14:13-48
+35            android:exported="false" />
+35-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:15:13-37
+36
+37        <receiver android:name="common.QMSServiceReceiver" >
+37-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:17:9-22:20
+37-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:17:19-59
+38            <intent-filter>
+38-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:18:13-21:29
+39                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+39-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:19:17-82
+39-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:19:25-79
+40                <action android:name="android.intent.action.USER_PRESENT" />
+40-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:20:17-77
+40-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:20:25-74
+41            </intent-filter>
+42        </receiver>
+43
+44        <service
+44-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:24:9-26:40
+45            android:name="common.BackgroundImageUpload"
+45-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:25:13-56
+46            android:exported="false" />
+46-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:26:13-37
+47
+48        <receiver android:name="common.QMSServiceReceiver" >
+48-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:17:9-22:20
+48-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:17:19-59
+49            <intent-filter>
+49-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:18:13-21:29
+50                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+50-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:19:17-82
+50-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:19:25-79
+51                <action android:name="android.intent.action.USER_PRESENT" />
+51-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:20:17-77
+51-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:20:25-74
+52            </intent-filter>
+53        </receiver>
+54
+55        <activity
+55-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:35:9-39:20
+56            android:name="com.cdac.egov.mmgsy.MainActivity"
+56-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:36:13-60
+57            android:label="@string/app_name"
+57-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:37:13-45
+58            android:launchMode="singleTop" >
+58-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:38:13-43
+59        </activity>
+60        <activity
+60-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:40:9-43:20
+61            android:name="com.cdac.egov.mmgsy.MainMenuActivity"
+61-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:41:13-64
+62            android:label="@string/title_activity_main_menu" >
+62-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:42:13-61
+63        </activity>
+64        <activity
+64-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:44:9-52:20
+65            android:name="com.cdac.egov.mmgsy.Splash"
+65-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:45:13-54
+66            android:label="@string/title_activity_splash" >
+66-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:46:13-58
+67            <intent-filter>
+67-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:47:13-51:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:48:17-69
+68-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:48:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:50:17-77
+70-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:50:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity
+73-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:53:9-56:20
+74            android:name="com.cdac.egov.mmgsy.DownloadScheduleActivity"
+74-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:54:13-72
+75            android:label="@string/title_activity_download_schedule" >
+75-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:55:13-69
+76        </activity>
+77        <activity
+77-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:57:9-60:20
+78            android:name="com.cdac.egov.mmgsy.StandardMenuActivity"
+78-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:58:13-68
+79            android:label="@string/title_activity_standard_menu" >
+79-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:59:13-65
+80        </activity>
+81        <activity
+81-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:61:9-64:20
+82            android:name="com.cdac.egov.mmgsy.TakePhotoActivity"
+82-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:62:13-65
+83            android:label="@string/title_activity_take_photo" >
+83-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:63:13-62
+84        </activity>
+85        <activity
+85-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:65:9-68:20
+86            android:name="com.cdac.egov.mmgsy.InpectionEntryActivity"
+86-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:66:13-70
+87            android:label="@string/title_activity_inpection_entry" >
+87-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:67:13-67
+88        </activity>
+89        <activity
+89-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:69:9-73:20
+90            android:name="com.cdac.egov.mmgsy.NqmCompletedGradingActivity"
+90-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:70:13-75
+91            android:label="@string/title_activity_nqm_completed_grading"
+91-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:71:13-73
+92            android:windowSoftInputMode="stateHidden" >
+92-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:72:13-54
+93        </activity>
+94        <activity
+94-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:74:9-78:20
+95            android:name="com.cdac.egov.mmgsy.NqmInProgressGradingActivity"
+95-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:75:13-76
+96            android:label="@string/title_activity_nqm_in_progress_grading"
+96-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:76:13-75
+97            android:windowSoftInputMode="stateHidden" >
+97-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:77:13-54
+98        </activity>
+99        <activity
+99-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:79:9-83:20
+100            android:name="com.cdac.egov.mmgsy.NqmMaintenanceGradingActivity"
+100-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:80:13-77
+101            android:label="@string/title_activity_nqm_maintenance_grading"
+101-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:81:13-75
+102            android:windowSoftInputMode="stateHidden" >
+102-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:82:13-54
+103        </activity>
+104        <activity
+104-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:84:9-88:20
+105            android:name="com.cdac.egov.mmgsy.SqmCompletedGradingActivity"
+105-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:85:13-75
+106            android:label="@string/title_activity_sqm_completed_grading"
+106-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:86:13-73
+107            android:windowSoftInputMode="stateHidden" >
+107-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:87:13-54
+108        </activity>
+109        <activity
+109-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:89:9-93:20
+110            android:name="com.cdac.egov.mmgsy.SqmInProgressGradingActivity"
+110-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:90:13-76
+111            android:label="@string/title_activity_sqm_in_progress_grading"
+111-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:91:13-75
+112            android:windowSoftInputMode="stateHidden" >
+112-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:92:13-54
+113        </activity>
+114        <activity
+114-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:94:9-98:20
+115            android:name="com.cdac.egov.mmgsy.SqmMaintenanceGradingActivity"
+115-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:95:13-77
+116            android:label="@string/title_activity_sqm_maintenance_grading"
+116-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:96:13-75
+117            android:windowSoftInputMode="stateHidden" >
+117-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:97:13-54
+118        </activity>
+119
+120        <!-- <activity -->
+121        <!-- android:name="com.cdac.egov.mmgsy.SqmLSBGradingActivity" -->
+122        <!-- android:label="@string/title_activity_sqm_maintenance_grading" -->
+123        <!-- android:windowSoftInputMode="stateHidden" > -->
+124        <!-- </activity> -->
+125
+126        <activity
+126-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:106:10-110:20
+127            android:name="com.cdac.egov.mmgsy.SqmLSBCompletedGradingActivity"
+127-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:107:13-78
+128            android:label="@string/title_activity_LSB_sqm_completed_grading"
+128-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:108:13-77
+129            android:windowSoftInputMode="stateHidden" >
+129-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:109:13-54
+130        </activity>
+131        <activity
+131-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:112:11-116:20
+132            android:name="com.cdac.egov.mmgsy.SqmLSBInProgressGradingActivity"
+132-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:113:13-79
+133            android:label="@string/title_activity_LSB_sqm_progress_grading"
+133-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:114:13-76
+134            android:windowSoftInputMode="stateHidden" >
+134-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:115:13-54
+135        </activity>
+136        <activity
+136-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:120:9-123:20
+137            android:name="com.cdac.egov.mmgsy.AppBaseActivity"
+137-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:121:13-63
+138            android:label="@string/title_activity_app_base" >
+138-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:122:13-60
+139        </activity>
+140        <activity
+140-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:124:9-127:20
+141            android:name="com.cdac.egov.mmgsy.UnplannedMenuActivity"
+141-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:125:13-69
+142            android:label="@string/title_activity_unplanned_menu" >
+142-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:126:13-66
+143        </activity>
+144        <activity
+144-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:128:9-132:20
+145            android:name="com.cdac.egov.mmgsy.UnplannedTakePhotoActivity"
+145-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:129:13-74
+146            android:label="@string/title_activity_unplanned_take_photo"
+146-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:130:13-72
+147            android:windowSoftInputMode="stateHidden" >
+147-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:131:13-54
+148        </activity>
+149        <activity
+149-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:133:9-137:20
+150            android:name="com.cdac.egov.mmgsy.UnplannedAssignRoadActivity"
+150-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:134:13-75
+151            android:label="@string/title_activity_unplanned_assign_road"
+151-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:135:13-73
+152            android:windowSoftInputMode="stateHidden" >
+152-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:136:13-54
+153        </activity>
+154        <activity
+154-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:138:9-141:20
+155            android:name="com.cdac.egov.mmgsy.ViewRoadsToAssignActivity"
+155-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:139:13-73
+156            android:label="@string/title_activity_view_roads_to_assign" >
+156-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:140:13-72
+157        </activity>
+158        <activity
+158-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:142:9-145:20
+159            android:name="com.cdac.egov.mmgsy.PlannedSubmitActivity"
+159-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:143:13-69
+160            android:label="@string/title_activity_planned_submit" >
+160-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:144:13-66
+161        </activity>
+162        <activity
+162-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:146:9-149:20
+163            android:name="com.cdac.egov.mmgsy.ImageGalleryActivity"
+163-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:147:13-68
+164            android:label="@string/title_activity_image_gallery" >
+164-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:148:13-65
+165        </activity>
+166        <activity
+166-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:150:9-153:20
+167            android:name="com.cdac.egov.mmgsy.ViewScheduleActivity"
+167-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:151:13-68
+168            android:label="@string/title_activity_view_schedule" >
+168-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:152:13-65
+169        </activity>
+170        <activity
+170-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:154:9-157:20
+171            android:name="com.cdac.egov.mmgsy.ResetActivity"
+171-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:155:13-61
+172            android:label="@string/title_activity_reset" >
+172-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:156:13-57
+173        </activity>
+174        <activity
+174-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:158:9-161:20
+175            android:name="com.cdac.egov.mmgsy.MessageBoxActivity"
+175-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:159:13-66
+176            android:label="@string/title_activity_message_box" >
+176-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:160:13-63
+177        </activity>
+178        <activity
+178-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:162:10-165:20
+179            android:name="com.cdac.egov.mmgsy.ViewUploadRecordsActivity"
+179-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:163:13-73
+180            android:label="@string/title_activity_view_uploaded_records" >
+180-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:164:13-73
+181        </activity>
+182        <activity
+182-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:167:11-170:20
+183            android:name="com.cdac.egov.mmgsy.HowToUseActivity"
+183-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:168:13-64
+184            android:label="@string/title_activity_how_to_use" >
+184-->C:\Users\yogitaj\StudioProjects\MMGSY_V2\app\src\main\AndroidManifest.xml:169:13-62
+185        </activity>
+186    </application>
+187
+188</manifest>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/loadertest.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/footer.css" rel="stylesheet">
+		<link href="css/navbar-fixed-top.css" rel="stylesheet">
+		<link href="css/slider.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/bootstrap-select.min.css" rel="stylesheet">
+		
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/isloading.js"></script>
+		<script src="js/style.js"></script>
+		
+	
+		<script>
+			$(document).ready(function(){
+			
+							//Initialize tooltips
+			$('.nav-tabs > li a[title]').tooltip();
+			
+			//Wizard
+			$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+				var $target = $(e.target);
+			
+				if ($target.parent().hasClass('disabled')) {
+					return false;
+				}
+			});
+
+			
+			
+			//setTimeout(function() { nextstep(); }, 5000);
+			
+			//setTimeout(function() { restartstep(); }, 20000);
+
+			
+				var signupstatus = WebViewInterface.loginorsignup();
+				if(signupstatus == "S")
+				{
+					$("#regSignInbtn").hide();
+					$("#aboutUspmgsybtn").hide();
+					$("#settingbtn").hide();
+				}
+				
+				if(signupstatus == "L")
+				{
+					$("#regSignUpbtn").hide();
+				}
+			});
+			
+		
+	function nextstep()
+	{
+	    var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+		
+		setTimeout(function() { nextstep(); }, 5000);
+	}
+	
+	function restartstep()
+	{
+		 location.reload();
+	}
+
+		
+	function nextTab(elem) {
+		$(elem).next().find('a[data-toggle="tab"]').click();
+	}
+	
+	function prevTab(elem) {
+		$(elem).prev().find('a[data-toggle="tab"]').click();
+	}
+		
+		</script>
+		
+	</head>
+		
+	<body>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">QMS (Planned Mode)</a>
+			</div>
+		</div>
+		
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<section>
+				<div class="wizard">
+					<div class="wizard-inner">
+						<div class="connecting-line"></div>
+						<ul class="nav nav-tabs" role="tablist">
+
+							<li role="presentation" class="active">
+								<a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+									<span class="round-tab">
+										<i class="step1"></i>
+									</span>
+								</a>
+							</li>
+
+							<li role="presentation">
+								<a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+									<span class="round-tab">
+										<i class="step2"></i>
+									</span>
+								</a>
+							</li>
+							
+							<li role="presentation">
+								<a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+									<span class="round-tab">
+										<i class="step3"></i>
+									</span>
+								</a>
+							</li>
+
+							<li role="presentation">
+								<a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Step 4">
+									<span class="round-tab">
+										<i class="step4"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<form role="form">
+						<div class="tab-content">
+							 <div class="tab-pane active" role="tabpanel" id="step1">
+								 <h4>Step-1 Get & View Schedule</h4> 
+								 <p>Fill in the registration form and click on <b>Submit</b> button. After the registration process, login by entering the registered mobile number. On successful verification the home page is displayed with three options: <br/>1.Add Feedback <br/>2. View &#38; Upload Feedback <br/>3. Profile </p> 
+								 <ul class="list-inline pull-right"> 
+								 </ul> 
+							 </div> 
+							<div class="tab-pane" role="tabpanel" id="step2">
+								<h4>Step-2 Take Photos</h4> 
+								 <p>To post a feedback click on <B>Add Feedback </b> button which provides option to:<br/> 1. Capture/Select Photograph <br/>&nbsp;&nbsp;&nbsp;a) Take Photograph using App <br/>&nbsp;&nbsp; b) Choose from Gallery <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Geotagged photos only)<br/>&nbsp;<i>Kindly ensure the GPS is ON mode before capturing the photographs </i><br/>2. After selecting the required photographs click on <b>Proceed to Feedback</b><br/> 3.Enter the required details of the feedback and click on <b> Save Feedback</b> button.</p> 
+								 <ul style="display: none;" class="list-inline pull-right"> 
+								  <li><button class="btn btn-default prev-step" type="button">Previous</button></li> 
+								  <li><button class="btn btn-primary next-step" type="button">Save and continue</button></li> 
+								 </ul> 
+							</div>
+							<div class="tab-pane" role="tabpanel" id="step3">
+								<h4>Step-3 Fill Observation</h4> 
+								<p>Click on <b>View &#38; Upload Feedback</b> button to view the list of feedbacks posted with an option to: <br/>1. <b>View &#38; Submit</b> <i>(To upload the feedback if all the entered details are correct)</i> <br/>2. <b>Update</b> <i>(To update the required details of the feedback)</i> <br/>3. <b>Delete</b> <i>(To delete the feedback)</i></p> 
+							</div>
+							<div class="tab-pane" role="tabpanel" id="complete">
+								 <h4>Step-4 Submit & View Observation</h4> 
+								<p>Click on <b>Get Status</b> button to view the latest status of the submitted feedback from the concerned authorities.</p> 
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</form>
+				</div>
+			</section>
+		   </div>
+		</div>
+		<br/><br/><br/>
+		
+		
+   <!--
+	<footer class="footer" style="position:fixed;">
+			<div class="container">
+				<p class="text-muted" style="margin:6px 0 0 !important;">Designed and Developed by </p>
+				<p class="text-muted" style="margin:0 0 1px !important;">e-Governance Group C-DAC Pune</p>
+			</div>
+	</footer>
+	-->
+	</body>
+</html> 

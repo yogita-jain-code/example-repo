@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgroad"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <ImageView
+        android:id="@+id/imgLogoViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flogo"
+        android:fillViewport="true" />
+
+    <TextView
+        android:id="@+id/errormsgTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgLogoViewId"
+        android:text=""
+        android:textColor="#FF0000" />
+
+    <EditText
+        android:id="@+id/txtUnameId"
+        style="@style/MyEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/errormsgTextView"
+        android:hint="@string/hintUsername"
+        android:textSize="@dimen/font_size" />
+
+    <EditText
+        android:id="@+id/txtPasswordId"
+        style="@style/MyEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtUnameId"
+        android:hint="@string/hintPassword"
+        android:password="true"
+        android:textSize="@dimen/font_size" />
+
+    <RadioGroup
+        android:id="@+id/workingModeRadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtPasswordId"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/onlineModeRadioButton"
+            android:layout_weight=".5"
+            android:checked="true"
+            android:text="@string/onlineModeRadioButtonlabel"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size" />
+
+        <RadioButton
+            android:id="@+id/offlineModeRadioButton"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:text="@string/offlineModeRadioButtonlabel"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkRememberId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/workingModeRadioGroup"
+        android:text="@string/rememberString"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size" />
+    
+      <Button
+        android:id="@+id/loginButtonId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+         android:textSize="@dimen/font_size"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chkRememberId"
+        style="@style/btnStyleBeige" /> 
+             
+       <TextView
+           android:id="@+id/lblVersionNo"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="2sp"
+           android:text="Version 1.0.3"
+           android:textColor="#FFFFFF"
+           android:textSize="@dimen/small_font"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@id/loginButtonId" />
+       
+       <TextView
+           android:id="@+id/lblDemoId"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="2sp"
+           android:text="@string/demo"
+           android:textColor="#FFFFFF"
+           android:textSize="@dimen/small_font"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@id/lblVersionNo" />
+       
+        
+       <ImageView
+           android:id="@+id/imgCopyRightId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/footer"
+        android:layout_marginTop="2sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDemoId" />
+       
+         <View
+           android:id="@+id/horizontalSeparatorId"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/white"
+    android:layout_alignParentLeft="true"
+           android:layout_below="@id/imgCopyRightId"/>
+         
+         <TextView
+           android:id="@+id/linkUpdateAppId"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/updateApp"
+           android:textColor="#084B8A"
+           android:textSize="@dimen/link_font"
+            android:layout_below="@id/horizontalSeparatorId"
+       android:layout_alignParentLeft="true"
+         />
+         
+          <TextView
+           android:id="@+id/verticalSeparatorId"   
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left"
+           android:text="   |   "
+           android:textColor="#DF7401"
+           android:textSize="@dimen/link_font"
+           android:layout_below="@id/horizontalSeparatorId"
+            android:layout_toRightOf="@+id/linkUpdateAppId"   />
+          
+           <TextView
+           android:id="@+id/helpTextId"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="right"
+           android:text="@string/helpline"
+           android:textColor="#084B8A"
+           android:textSize="@dimen/link_font"
+           android:layout_below="@id/horizontalSeparatorId"
+           android:layout_toRightOf="@+id/verticalSeparatorId"
+            /> 
+
+</RelativeLayout>
+</ScrollView>

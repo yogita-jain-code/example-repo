@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cdac.egov.mmgsy"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <application
+        android:name="common.MyCrashApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="common.SynMasterData"
+            android:exported="false" />
+
+        <receiver android:name="common.QMSServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="common.BackgroundImageUpload"
+            android:exported="false" />
+
+        <receiver android:name="common.QMSServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.cdac.egov.mmgsy.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.MainMenuActivity"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.Splash"
+            android:label="@string/title_activity_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.DownloadScheduleActivity"
+            android:label="@string/title_activity_download_schedule" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.StandardMenuActivity"
+            android:label="@string/title_activity_standard_menu" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.TakePhotoActivity"
+            android:label="@string/title_activity_take_photo" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.InpectionEntryActivity"
+            android:label="@string/title_activity_inpection_entry" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.NqmCompletedGradingActivity"
+            android:label="@string/title_activity_nqm_completed_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.NqmInProgressGradingActivity"
+            android:label="@string/title_activity_nqm_in_progress_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.NqmMaintenanceGradingActivity"
+            android:label="@string/title_activity_nqm_maintenance_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.SqmCompletedGradingActivity"
+            android:label="@string/title_activity_sqm_completed_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.SqmInProgressGradingActivity"
+            android:label="@string/title_activity_sqm_in_progress_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.SqmMaintenanceGradingActivity"
+            android:label="@string/title_activity_sqm_maintenance_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        
+<!--        <activity-->
+<!--            android:name="com.cdac.egov.mmgsy.SqmLSBGradingActivity"-->
+<!--            android:label="@string/title_activity_sqm_maintenance_grading"-->
+<!--            android:windowSoftInputMode="stateHidden" >-->
+<!--        </activity>-->
+        
+         <activity
+            android:name="com.cdac.egov.mmgsy.SqmLSBCompletedGradingActivity"
+            android:label="@string/title_activity_LSB_sqm_completed_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        
+          <activity
+            android:name="com.cdac.egov.mmgsy.SqmLSBInProgressGradingActivity"
+            android:label="@string/title_activity_LSB_sqm_progress_grading"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.cdac.egov.mmgsy.AppBaseActivity"
+            android:label="@string/title_activity_app_base" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.UnplannedMenuActivity"
+            android:label="@string/title_activity_unplanned_menu" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.UnplannedTakePhotoActivity"
+            android:label="@string/title_activity_unplanned_take_photo"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.UnplannedAssignRoadActivity"
+            android:label="@string/title_activity_unplanned_assign_road"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.ViewRoadsToAssignActivity"
+            android:label="@string/title_activity_view_roads_to_assign" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.PlannedSubmitActivity"
+            android:label="@string/title_activity_planned_submit" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.ImageGalleryActivity"
+            android:label="@string/title_activity_image_gallery" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.ViewScheduleActivity"
+            android:label="@string/title_activity_view_schedule" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.ResetActivity"
+            android:label="@string/title_activity_reset" >
+        </activity>
+        <activity
+            android:name="com.cdac.egov.mmgsy.MessageBoxActivity"
+            android:label="@string/title_activity_message_box" >
+        </activity>
+         <activity
+            android:name="com.cdac.egov.mmgsy.ViewUploadRecordsActivity"
+            android:label="@string/title_activity_view_uploaded_records" >
+        </activity>
+        
+          <activity
+            android:name="com.cdac.egov.mmgsy.HowToUseActivity"
+            android:label="@string/title_activity_how_to_use" >
+        </activity>
+        
+        
+    </application>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgroad"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+   <ImageView
+        android:id="@+id/imgLogoViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flogo"
+        android:fillViewport="true" />
+   
+   <EditText
+        android:id="@+id/txtResetPasswordId"
+        style="@style/MyEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imgLogoViewId"
+        android:hint="@string/hintPassword"
+        android:password="true"
+        android:textSize="@dimen/font_size" />
+   
+    <LinearLayout
+	    android:id="@+id/linearLayoutResetId"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/txtResetPasswordId">
+	    
+        <Button
+       android:id="@+id/btnResetId"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/Reset"
+       android:textSize="@dimen/font_size"
+       android:layout_marginTop="5dp"
+       android:layout_weight=".60"
+       style="@style/btnStyleBeige"
+        />
+				
+	<Button
+       android:id="@+id/btnResetCancelId"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/ResetCancel"
+       android:textSize="@dimen/font_size"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       style="@style/btnStyleBeige"
+       android:layout_weight=".40" />
+	    
+        </LinearLayout>	
+
+</RelativeLayout>
+</ScrollView>

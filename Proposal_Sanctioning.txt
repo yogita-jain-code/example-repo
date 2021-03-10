@@ -1,0 +1,11 @@
+Proposal Sanctioning Screen :
+
+1. Acceptance date can be greater or less than other dates i.e. Administrative
+and Technical Sanction Date. => But if i am selecting Acceptance date less Sanction or Administrative date then it showing "Please select valid acceptance date".
+
+2. Check for validation of Technical Sanction date it should be greater than
+administratative approval date. => But while selecting the Sanction date, its also showing the same date as it is selected in the administratative approval date.
+
+
+[min]="sanctionedDate"
+

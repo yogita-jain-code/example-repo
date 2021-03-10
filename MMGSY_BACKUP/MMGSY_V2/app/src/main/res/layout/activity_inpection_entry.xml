@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgroad"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+  <!--        <ImageView
+      android:id="@+id/imgInspectionEntryLogoViewId"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/flogo"
+      android:fillViewport="true" />
+ -->
+ 
+  <include 
+     android:id="@+id/commonHeaderLayoutId"
+     layout="@layout/common_header" />  
+           
+   <Spinner
+     android:id="@+id/spinnerInspectionEntryRoadNameId"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:spinnerMode="dialog"
+     android:singleLine="false"
+     style="@style/spinnerStyle"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@id/commonHeaderLayoutId"
+     android:textSize="@dimen/font_size"  />
+          
+            <LinearLayout
+    
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentLeft="true"
+       android:layout_below="@id/spinnerInspectionEntryRoadNameId">
+						   
+ 	
+	<Button
+       android:id="@+id/btnInspectionEntryFormId"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/inspectionEntryFormText"
+       android:textSize="@dimen/font_size"
+       android:layout_marginTop="5dp"
+       android:layout_weight=".60"
+       style="@style/btnStyleBeige"
+        />
+				
+	<Button
+       android:id="@+id/btnInspectionEntryCancelId"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/inspectionEntryCancel"
+       android:textSize="@dimen/font_size"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       style="@style/btnStyleBeige"
+       android:layout_weight=".40" />
+				
+				
+				
+	</LinearLayout>
+      
+    </RelativeLayout>
+    
+</ScrollView>    

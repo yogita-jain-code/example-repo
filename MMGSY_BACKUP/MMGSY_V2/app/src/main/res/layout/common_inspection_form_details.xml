@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/gradingFormLinearLayoutForm0"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+      android:orientation="vertical" 				        
+      android:textSize="@dimen/small_font"> 
+             
+        	
+    <TextView
+        android:id="@+id/gradingFormMonitorNameIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor name : "
+        android:textSize="@dimen/font_size"
+        android:textColor="#084B8A"
+        android:layout_marginLeft="2dp"/>
+ 
+		     
+		     
+    <TextView 
+        android:id="@+id/gradingFormUniqueNoIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePhotoUniqueNo"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>	
+     <TextView 
+        android:id="@+id/gradingFormRoadNameIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePhotoRoadName"
+         android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>	
+	 <TextView 
+        android:id="@+id/gradingFormRoadStatusIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePhotoRoadStatus"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>
+	 <TextView 
+        android:id="@+id/gradingFormPackageIdIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePhotoPackageId"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>
+	 <TextView 
+        android:id="@+id/gradingFormSanctionYearIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePhotoSanctionYear"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/> 
+		  
+		
+	 <TextView 
+        android:id="@+id/gradingFormRoadLengthIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>  
+        
+	 <TextView 
+        android:id="@+id/gradingFormCompDateIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed Date"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>
+        
+	 <TextView 
+        android:id="@+id/gradingFormInspDateIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inspection Date : "
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>
+        
+	 <TextView 
+        android:id="@+id/gradingFormStateDistBlockIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePhotoStateDistBlock"
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>
+	 
+	 <TextView 
+        android:id="@+id/gradingFormIsEnquiryIdTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is Enquiry : "
+        android:textColor="#084B8A"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="2dp"/>
+	 
+      <View 
+        android:layout_width="wrap_content"
+		android:layout_height="1dp"
+		android:layout_marginTop="2dp"
+		android:background="@android:color/darker_gray"
+		/>
+	 <EditText
+        android:id="@+id/gradingFormFromChainageIdEditText"
+        style="@style/MyEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/hintFromChainage"
+        android:textSize="@dimen/font_size"
+        android:inputType="numberDecimal" />
+	 
+	  <EditText
+        android:id="@+id/gradingFormToChainageIdEditText"
+        style="@style/MyEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/hintToChainage"
+        android:textSize="@dimen/font_size"
+        android:inputType="numberDecimal" />	      
+		      
+	      </LinearLayout>

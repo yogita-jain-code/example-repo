@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\yogitaj\\StudioProjects\\MMGSY_V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yogitaj\\StudioProjects\\MMGSY_V2\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+                    "from": {
+                        "startLines": "6,7,13,12,10,9,8",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "196,250,459,415,377,340,302",
+                        "endColumns": "53,51,43,43,36,36,37",
+                        "endOffsets": "249,301,502,458,413,376,339"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,217,265,306,347",
+                        "endColumns": "57,55,47,47,40,40,41",
+                        "endOffsets": "108,164,212,260,301,342,384"
+                    }
+                }
+            ]
+        }
+    ]
+}

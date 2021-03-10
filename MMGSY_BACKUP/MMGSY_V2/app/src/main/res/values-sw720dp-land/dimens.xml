@@ -1,0 +1,15 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+<dimen name="activity_horizontal_margin">60dp</dimen>
+<dimen name="activity_vertical_margin">60dp</dimen>
+<dimen name="small_font">20sp</dimen>
+<dimen name="link_font">21sp</dimen>
+<dimen name="font_size">22sp</dimen>
+
+<dimen name="flipperBtnWidth">140dp</dimen>
+<dimen name="flipperBtnHeight">40dp</dimen>
+</resources>

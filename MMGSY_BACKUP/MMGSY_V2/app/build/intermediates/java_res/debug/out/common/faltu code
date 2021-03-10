@@ -1,0 +1,10 @@
+/*	params.addRule(RelativeLayout.RIGHT_OF, takePhotosSetStartPointButton.getId());
+				params.addRule(RelativeLayout.BELOW, R.id.spinnerImageDescriptionId);
+				params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, takePhotosSetEndPointButton.getId());
+				params.topMargin = 7;
+				params.leftMargin = 10;
+		    	takePhotosCancelButton.setLayoutParams(params);*/
+		    	
+			//	takePhotosCancelButton.setLayoutParams(LayoutParams.)
+			
+			

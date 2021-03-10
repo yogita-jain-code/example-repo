@@ -1,0 +1,3933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/airroad"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+    
+   <include 
+     android:id="@+id/commonHeaderLayoutId"
+     layout="@layout/common_header" />
+   
+    <!--  Code for Flipper buttons Layout for buttons  -->
+    <LinearLayout
+        android:id="@+id/nqmInProgressGradingFormNxtPrevBtnLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" 
+        android:layout_centerInParent="true"
+     	android:layout_below="@id/commonHeaderLayoutId"
+     	android:textSize="@dimen/font_size">
+
+        <Button
+            android:id="@+id/nqmInProgressGradingFormPrevBtnId"
+            android:layout_width="@dimen/flipperBtnWidth"
+            android:layout_height="@dimen/flipperBtnHeight"
+            android:text="@string/gradingFormPrevButton"
+            android:textSize="@dimen/small_font"
+            style="@style/btnStyleFlipper"
+            /> 
+        
+        <Button
+            android:id="@+id/nqmInProgressGradingFormNextBtnId"
+            android:layout_width="@dimen/flipperBtnWidth"
+            android:layout_height="@dimen/flipperBtnHeight"
+            android:layout_marginLeft="10dp"
+            android:text="@string/gradingFormNextButton"
+            android:textSize="@dimen/small_font"
+            style="@style/btnStyleFlipper"
+            />
+     </LinearLayout>
+     <!--  Code End for buttons -->
+   
+ 
+ 	<View 
+ 	    android:id="@+id/nqmInProgressGradingFormHrLineView"
+        android:layout_width="wrap_content"
+		android:layout_height="1dp"
+		android:layout_marginTop="5dp"
+		android:background="@android:color/transparent"
+		android:layout_centerInParent="true"
+    	android:layout_below="@id/nqmInProgressGradingFormNxtPrevBtnLayout"
+	  />  
+	  
+    <!-- View Flipper Starts here  -->
+    <ViewFlipper
+            android:id="@+id/nqmInProgressGradingFormViewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/frame"
+    		android:layout_below="@id/nqmInProgressGradingFormHrLineView" >
+  
+        <!-- ************************* Layout for Form0 Starts here *****************  -->
+        		<include layout="@layout/common_inspection_form_details" />
+        <!-- ************************* Layout for Form0 ends here *****************  -->
+        
+        <!-- ************************* Layout for Form1 Starts here *****************  -->
+        <LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 								android:text="@string/NA" 
+			        
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Quality Arrangment *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormQualityArrangmentTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayQualityArrangmentString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        		
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormQualityArrangmentLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormQualityArrangmentRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal"
+					>
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityArrangmentRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityArrangmentRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityArrangmentRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityArrangmentRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		
+		      
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      	  
+		      <!--  Sub Group to Quality Arrangement Starts here-->
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangement"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayQualityArrangmentSubItemString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton 
+					    		android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		         <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormSubItemQualityArrangementCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      <!--  Sub Group to Attention To Quality Ends Here-->
+		   
+		      
+	      </LinearLayout>
+        <!-- ************************* Layout for Form1 ends here *****************  -->
+       
+       
+       <!-- ************************* Layout for Form2 Starts here *****************  -->
+        <LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+		      
+		      <!-- ************************* Item - Attention To Quality *****************  -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormAttentionToQualityTxtView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayAttentionToQualityString"
+		            android:textSize="@dimen/font_size"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="2dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormAttentionToQualityLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        		
+        		<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormAttentionToQualityRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormAttentionToQualityRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormAttentionToQualityRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormAttentionToQualityRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormAttentionToQualityRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		      
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        	  <!--  Sub Group to Attention To Quality Starts here-->
+        	  <!-- Maintenance of QC Registers  -->
+        	  <TextView
+		            android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQuality"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayAttentionToQualitySubItemMaintenanceOfQCString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQualityLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQualityRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton 
+					    		android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQualityRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQualityRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQualityRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMaintenanceOfQCAttentionToQualityRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+        	    <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormAttentionToQualityRadioGroupCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+        	  
+        	  <!-- SubItem Verification Of Results -->
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQuality"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayAttentionToQualitySubItemVerificationString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton 
+					    		android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormVerificationOfTestResultsAttentionToQualityCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      <!--  Sub Group to Attention To Quality Ends Here-->
+		      
+	      </LinearLayout>
+        <!-- ************************* First Screen Layout for Form2 ends here *****************  -->
+       
+        
+        
+        
+        <!-- ************************* Layout for Form3 Starts here *****************  -->
+        <LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Geometrics *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormGeometricsTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayGeometricsString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormGeometricsLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormGeometricsRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+						<RadioButton android:id="@+id/nqmInProgressGradingFormGeometricsRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeometricsRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeometricsRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeometricsRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		     
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to Geometrics Starts here-->
+          	   <!-- Geomatics - RoadWayWidth -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometrics"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayGeometricsSubItemRoadWayWidthString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormRoadWayWitdhGeometricsCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- Geomatics - CarriageWayWidth -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometrics"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayGeometricsSubItemCarriageWayWidthString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormCarriageWayWidthGeometricsCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      <!-- Geomatics - Camber -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormCamberGeometrics"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayGeometricsSubItemCamberString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCamberGeometricsLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCamberGeometricsRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCamberGeometricsRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCamberGeometricsRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCamberGeometricsRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCamberGeometricsRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormCamberGeometricsCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      <!-- Geomatics - Super Elevation -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormSuperElevationGeometrics"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayGeometricsSubItemSuperElevationString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormSuperElevationGeometricsCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      	
+		      <!-- Geomatics - LongitudinalGradient -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometrics"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayGeometricsSubItemLongitudinalGradientString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormLongitudinalGradientGeometricsCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->			
+		      <!-- Geomatics Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      
+	      </LinearLayout>
+        
+        <!-- ************************* Layout for Form3 Ends here *****************  -->
+        
+    	
+    	
+    	<!-- ************************* Layout for Form4 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm4"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - EarthWorkEmbankment *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayEarthWorkEmbankmentString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormEarthWorkEmbankmentRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		       
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to EarthWorkEmbankment Starts here-->
+          	   <!-- EarthWorkEmbankment - Quality of Material for Embankment Sub Grade -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormQualityOfMaterialWitdhEarthWorkEmbankment"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayEarthWorkEmbankmentSubItemQualityOfMaterialString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormQualityOfMaterialEarthWorkEmbankmentCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->
+		      	
+		      <!-- EarthWorkEmbankment - Compaction -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankment"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayEarthWorkEmbankmentSubItemCompactionString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormCompactionEarthWorkEmbankmentCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->
+		      		      	
+		      <!-- EarthWorkEmbankment - Stability and Workmanship   -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankment"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayEarthWorkEmbankmentSubItemStabilityString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormStabilityEarthWorkEmbankmentCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- EarthWorkEmbankment - Adequacy of Slope Protection -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankment"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayEarthWorkEmbankmentSubItemSlopeProtectionString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormSlopeProtectionEarthWorkEmbankmentCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->			
+		      <!-- EarthWorkEmbankment Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form4 Ends here *****************  -->
+        	
+        
+        <!-- ************************* Layout for Form5 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm5"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - SubBase *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormSubBaseTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displaySubBaseString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormSubBaseLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormSubBaseRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubBaseRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubBaseRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubBaseRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSubBaseRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		     
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to Sub-Base Starts here-->
+          	   <!-- Sub-Base - Grain Size -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormGrainSizeSubBase"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displaySubBaseSubItemGrainSizeString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormGrainSizeSubBaseCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- Sub-Base - Plasticity -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormPlasticitySubBase"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displaySubBaseSubItemPlasticityString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormPlasticitySubBaseCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      
+		      <!-- Sub-Base - Compaction -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormCompactionSubBase"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displaySubBaseSubItemCompactionString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCompactionSubBaseLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCompactionSubBaseRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionSubBaseRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionSubBaseRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionSubBaseRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionSubBaseRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormCompactionSubBaseCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      <!-- SubBase - Total Thickness of Layer   -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBase"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displaySubBaseSubItemTotalThicknessString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormTotalThicknessSubBaseCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      
+		      <!-- Sub_Base Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form5 Ends here *****************  -->	
+        	
+        
+        
+        <!-- ************************* Layout for Form6 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm6"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Base Course-Water *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormBaseCourseWaterTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayBaseCourseWaterString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormBaseCourseWaterLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormBaseCourseWaterRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBaseCourseWaterRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBaseCourseWaterRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBaseCourseWaterRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBaseCourseWaterRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		      
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to Base Course Water Starts here-->
+          	   <!-- Base Course-Water - Grain Size -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWater"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBaseCourseWaterSubItemGrainSizeString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		         <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormGrainSizeBaseCourseWaterCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- Base Course-Water - Plasticity -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWater"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBaseCourseWaterSubItemPlasticityString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormPlasticityBaseCourseWaterCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      
+		      <!-- Base Course-Water - Compaction -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWater"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBaseCourseWaterSubItemCompactionString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormCompactionBaseCourseWaterCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      <!-- BaseCourseWater -  Thickness of Layer   -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWater"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBaseCourseWaterSubItemThicknessString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormThick5nessBaseCourseWaterLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWaterRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWaterRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWaterRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWaterRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWaterRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormThicknessBaseCourseWaterCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      
+		      <!-- Base Course Water Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form6 Ends here *****************  -->	
+        	
+        	
+        
+        <!-- ************************* Layout for Form7 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm7"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Bituminous Layer *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormBituminousTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayBituminousString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormBituminousLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormBituminousRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBituminousRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBituminousRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBituminousRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormBituminousRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		      
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	  <!--  Sub Group to Bituminous Starts here-->
+          	  
+          	  <!-- Bituminous - Gradation of Aggregate  -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormGradationBituminous"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBituminousSubItemGradationString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormGradationBituminousLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormGradationBituminousRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGradationBituminousRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGradationBituminousRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGradationBituminousRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGradationBituminousRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormGradationBituminousCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- Bituminous - Mixing Temperature of Mix -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminous"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBituminousSubItemMixingTemperatureString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormMixingTemperatureBituminousCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      
+		      <!-- Bituminous - Laying Temperature of Mix -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminous"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBituminousSubItemLayingTemperatureString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+          	  <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormLayingTemperatureBituminousCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+          	  
+ 		      <!-- Bituminous - Thickness of Layer   -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormThicknessBituminous"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBituminousSubItemThicknessString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormThicknessBituminousLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormThicknessBituminousRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBituminousRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBituminousRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBituminousRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessBituminousRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormThicknessBituminousCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      <!-- Bituminous -  Surface Evenness   -->
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormSurfaceBituminous"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayBituminousSubItemSurfaceString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormSurfaceBituminousLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormSurfaceBituminousRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSurfaceBituminousRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSurfaceBituminousRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSurfaceBituminousRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSurfaceBituminousRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormSurfaceBituminousCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      <!-- Bituminous Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form7 Ends here *****************  -->	
+        	
+        	
+        
+        <!-- ************************* Layout for Form8 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm8"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Shoulders *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormShouldersTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayShoulderstring"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormShouldersLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormShouldersRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormShouldersRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormShouldersRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormShouldersRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormShouldersRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		     
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+		
+		      	<!-- No SubItems in Shoulders for In Progress Road -->		
+		      
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form8 Ends here *****************  -->	
+        
+        
+        
+        <!-- ************************* Layout for Form9 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm9"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Cross Drainage *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormCrossDrainageTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayCrossDrainageString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCrossDrainageLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCrossDrainageRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCrossDrainageRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCrossDrainageRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCrossDrainageRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCrossDrainageRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		     
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to CrossDrainage Starts here-->
+          	   <!-- Cross Drainage - QualityOfMaterial -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainage"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayCrossDrainageSubItemQualityofMaterialString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormQualityOfMaterialCrossDrainageCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- Cross Drainage - Quality Of Workmanship -->	
+		      <TextView
+		            android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainage"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayCrossDrainageSubItemQualityOfWorkmanshipString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormQualityOfWorkmanshipCrossDrainageCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      	
+		      <!-- Cross Drainage Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+        		
+		      
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form9 Ends here *****************  -->
+        	
+        
+        
+        <!-- ************************* Layout for Form10 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm10"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Side Drain *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormSideDrainTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displaySideDrainString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormSideDrainLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormSideDrainRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSideDrainRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSideDrainRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSideDrainRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormSideDrainRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		    
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to Side Drain Starts here-->
+          	   <!-- Side Drain - General quality of SD -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrain"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displaySideDrainSubItemGeneralQualityString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormGeneralQualitySideDrainCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      <!-- Side Drainage Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form10 Ends here *****************  -->
+        	
+        
+        
+        <!-- ************************* Layout for Form11 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm11"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - CC Semi Rigid Pavement *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayCCSemiRigidPavementString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCCSemiRigidPavementRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		     
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to CCSemiRigidPavement Starts here-->
+          	   <!-- CCSemiRigidPavement - QualityMaterial -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavement"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayCCSemiRigidPavementSubItemQualityMaterialString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormQualityMaterialCCSemiRigidPavementCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	 
+		      	
+		      <!-- CCSemiRigidPavement - Strength of CC -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavement"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayCCSemiRigidPavementSubItemStrengthString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>	
+		        <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormStrengthCCSemiRigidPavementCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	 
+		      <!-- CCSemiRigidPavement - Quality of Workmanship -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavement"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayCCSemiRigidPavementSubItemQualityString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormQualityCCSemiRigidPavementCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      <!-- CCSemiRigidPavement - Thickness of layer -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavement"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayCCSemiRigidPavementSubItemThicknessString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- CCSemiRigidPavement Sub Items Ends Here -->
+		      <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormThicknessCCSemiRigidPavementCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->				
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form11 Ends here *****************  -->	
+        
+        
+        <!-- ************************* Layout for Form12 Starts here *****************  -->
+    	
+    	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormLinearLayoutForm12"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical" 
+			     	android:textSize="@dimen/small_font"> 
+        
+        	<!-- ************************* Item - Road Furnitures And Markings *****************  -->
+	        <TextView
+	            android:id="@+id/nqmInProgressGradingFormRoadFurnituresTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayRoadFurnituresString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#084B8A"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormRoadFurnituresLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormRoadFurnituresRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadFurnituresRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadFurnituresRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadFurnituresRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormRoadFurnituresRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		       
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+				/>
+	      
+          	   <!--  Sub Group to RoadFurnitures Starts here-->
+ 		        <!-- RoadFurnitures - CitizenInfoBoard -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormQualityMaterialRoadFurnitures"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayRoadFurnituresSubItemCitizenInfoBoardString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		       <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormCitizenInfoBoardRoadFurnituresCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->	
+		      <!-- RoadFurnitures - Whwether -->	
+        	   <TextView
+		            android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnitures"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/displayRoadFurnituresSubItemWhetherString"
+		            android:textSize="@dimen/small_font"
+		            android:textColor="#084B8A"
+		            android:layout_marginLeft="10dp"
+		            >
+		        </TextView>
+		      	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+        	   
+		      	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								android:visibility="invisible"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!--  EditText Comment  -->
+		       <EditText
+			        android:id="@+id/nqmInProgressGradingFormWhetherRoadFurnituresCommentEditText"
+			        style="@style/MyEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:hint="@string/Ucomment"
+			        android:textSize="@dimen/font_size"
+			        android:visibility="gone"
+			        />	
+			   <!--  EditText Comment  -->		
+		      
+		      <!-- RoadFurnitures Sub Items Ends Here -->
+		      			
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+
+		      <!-- Item - Overall Grading Starts Here-->
+		      
+		      <TextView
+	            android:id="@+id/nqmInProgressGradingFormOverallGradeTxtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayOverallGradingString"
+	            android:textSize="@dimen/font_size"
+	            android:textColor="#D99C34"
+	            android:layout_marginLeft="2dp"/>
+		     
+        			
+	        	<LinearLayout
+			        android:id="@+id/nqmInProgressGradingFormOverallGradeLinearLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="horizontal" 
+			     	android:textSize="@dimen/small_font"> 
+	        	<!-- RadioGroup Starts here  -->
+				<RadioGroup 
+				    android:id="@+id/nqmInProgressGradingFormOverallGradeRadioGroup"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+    				
+					<RadioButton android:id="@+id/nqmInProgressGradingFormOverallGradeRadio_S"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/S" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					<RadioButton android:id="@+id/nqmInProgressGradingFormOverallGradeRadio_SRI"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/SRI" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormOverallGradeRadio_U"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/U" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:layout_weight=".25"
+								/>
+					
+					<RadioButton android:id="@+id/nqmInProgressGradingFormOverallGradeRadio_NA"
+								android:layout_width="0dp" 
+								android:layout_height="wrap_content"
+								android:text="@string/NA" 
+								android:textColor="#084B8A"
+								android:textSize="@dimen/small_font"
+								android:enabled="false"
+								android:checked="true"
+								android:layout_weight=".25"
+								/>
+		      </RadioGroup>
+		      </LinearLayout>
+		      <!-- RadioGroup Ends here  -->
+		     
+		      <!-- Overall Grading Ends Here -->
+		      <View 
+		        android:layout_width="wrap_content"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="@android:color/darker_gray"
+			  />
+		      
+  <LinearLayout
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_margin="5dp">
+						   
+	<Button
+       android:id="@+id/nqmInProgressGradingFormSaveBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/saveGradingString"
+       android:textSize="@dimen/font_size"
+       android:layout_marginTop="5dp"
+       style="@style/btnStyleBeige"
+       android:layout_weight=".50"  />
+				
+   <Button
+       android:id="@+id/nqmInProgressGradingFormCancelBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/takePhotoCancel"
+       android:textSize="@dimen/font_size"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       style="@style/btnStyleBeige"
+       android:layout_weight=".50" />
+				
+	</LinearLayout>
+	      </LinearLayout>
+    	
+    	<!-- ************************* Layout for Form12 Ends here *****************  -->	
+        	
+        	
+    </ViewFlipper>
+    <!-- View Flipper Ends here  -->
+   </RelativeLayout>
+</ScrollView>   

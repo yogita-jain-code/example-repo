@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">60dp</dimen>
+    <dimen name="activity_vertical_margin">60dp</dimen>
+    <dimen name="flipperBtnHeight">40dp</dimen>
+    <dimen name="flipperBtnWidth">140dp</dimen>
+    <dimen name="font_size">22sp</dimen>
+    <dimen name="link_font">21sp</dimen>
+    <dimen name="small_font">20sp</dimen>
+</resources>

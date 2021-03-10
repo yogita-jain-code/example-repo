@@ -1,0 +1,184 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ic_launcher-web.png
+* proguard-project.txt
+* res_new\
+* res_new\drawable-hdpi\
+* res_new\drawable-hdpi\ab_bottom_solid_qms.9.png
+* res_new\drawable-hdpi\ab_solid_qms.9.png
+* res_new\drawable-hdpi\ab_stacked_solid_qms.9.png
+* res_new\drawable-hdpi\ab_texture_tile_qms.png
+* res_new\drawable-hdpi\ab_transparent_qms.9.png
+* res_new\drawable-hdpi\btn_cab_done_default_qms.9.png
+* res_new\drawable-hdpi\btn_cab_done_focused_qms.9.png
+* res_new\drawable-hdpi\btn_cab_done_pressed_qms.9.png
+* res_new\drawable-hdpi\cab_background_bottom_qms.9.png
+* res_new\drawable-hdpi\cab_background_top_qms.9.png
+* res_new\drawable-hdpi\list_focused_qms.9.png
+* res_new\drawable-hdpi\list_pressed_qms.9.png
+* res_new\drawable-hdpi\menu_dropdown_panel_qms.9.png
+* res_new\drawable-hdpi\progress_bg_qms.9.png
+* res_new\drawable-hdpi\progress_primary_qms.9.png
+* res_new\drawable-hdpi\progress_secondary_qms.9.png
+* res_new\drawable-hdpi\spinner_ab_default_qms.9.png
+* res_new\drawable-hdpi\spinner_ab_disabled_qms.9.png
+* res_new\drawable-hdpi\spinner_ab_focused_qms.9.png
+* res_new\drawable-hdpi\spinner_ab_pressed_qms.9.png
+* res_new\drawable-hdpi\tab_selected_focused_qms.9.png
+* res_new\drawable-hdpi\tab_selected_pressed_qms.9.png
+* res_new\drawable-hdpi\tab_selected_qms.9.png
+* res_new\drawable-hdpi\tab_unselected_focused_qms.9.png
+* res_new\drawable-hdpi\tab_unselected_pressed_qms.9.png
+* res_new\drawable-hdpi\tab_unselected_qms.9.png
+* res_new\drawable-mdpi\
+* res_new\drawable-mdpi\ab_bottom_solid_qms.9.png
+* res_new\drawable-mdpi\ab_solid_qms.9.png
+* res_new\drawable-mdpi\ab_stacked_solid_qms.9.png
+* res_new\drawable-mdpi\ab_texture_tile_qms.png
+* res_new\drawable-mdpi\ab_transparent_qms.9.png
+* res_new\drawable-mdpi\bgroad.jpg
+* res_new\drawable-mdpi\btn_cab_done_default_qms.9.png
+* res_new\drawable-mdpi\btn_cab_done_focused_qms.9.png
+* res_new\drawable-mdpi\btn_cab_done_pressed_qms.9.png
+* res_new\drawable-mdpi\cab_background_bottom_qms.9.png
+* res_new\drawable-mdpi\cab_background_top_qms.9.png
+* res_new\drawable-mdpi\flogo.png
+* res_new\drawable-mdpi\footer.png
+* res_new\drawable-mdpi\ic_launcher.png
+* res_new\drawable-mdpi\list_focused_qms.9.png
+* res_new\drawable-mdpi\list_pressed_qms.9.png
+* res_new\drawable-mdpi\menu_dropdown_panel_qms.9.png
+* res_new\drawable-mdpi\progress_bg_qms.9.png
+* res_new\drawable-mdpi\progress_primary_qms.9.png
+* res_new\drawable-mdpi\progress_secondary_qms.9.png
+* res_new\drawable-mdpi\spinner_ab_default_qms.9.png
+* res_new\drawable-mdpi\spinner_ab_disabled_qms.9.png
+* res_new\drawable-mdpi\spinner_ab_focused_qms.9.png
+* res_new\drawable-mdpi\spinner_ab_pressed_qms.9.png
+* res_new\drawable-mdpi\tab_selected_focused_qms.9.png
+* res_new\drawable-mdpi\tab_selected_pressed_qms.9.png
+* res_new\drawable-mdpi\tab_selected_qms.9.png
+* res_new\drawable-mdpi\tab_unselected_focused_qms.9.png
+* res_new\drawable-mdpi\tab_unselected_pressed_qms.9.png
+* res_new\drawable-mdpi\tab_unselected_qms.9.png
+* res_new\drawable-xhdpi\
+* res_new\drawable-xhdpi\ab_bottom_solid_qms.9.png
+* res_new\drawable-xhdpi\ab_solid_qms.9.png
+* res_new\drawable-xhdpi\ab_stacked_solid_qms.9.png
+* res_new\drawable-xhdpi\ab_texture_tile_qms.png
+* res_new\drawable-xhdpi\ab_transparent_qms.9.png
+* res_new\drawable-xhdpi\btn_cab_done_default_qms.9.png
+* res_new\drawable-xhdpi\btn_cab_done_focused_qms.9.png
+* res_new\drawable-xhdpi\btn_cab_done_pressed_qms.9.png
+* res_new\drawable-xhdpi\cab_background_bottom_qms.9.png
+* res_new\drawable-xhdpi\cab_background_top_qms.9.png
+* res_new\drawable-xhdpi\list_focused_qms.9.png
+* res_new\drawable-xhdpi\list_pressed_qms.9.png
+* res_new\drawable-xhdpi\menu_dropdown_panel_qms.9.png
+* res_new\drawable-xhdpi\progress_bg_qms.9.png
+* res_new\drawable-xhdpi\progress_primary_qms.9.png
+* res_new\drawable-xhdpi\progress_secondary_qms.9.png
+* res_new\drawable-xhdpi\spinner_ab_default_qms.9.png
+* res_new\drawable-xhdpi\spinner_ab_disabled_qms.9.png
+* res_new\drawable-xhdpi\spinner_ab_focused_qms.9.png
+* res_new\drawable-xhdpi\spinner_ab_pressed_qms.9.png
+* res_new\drawable-xhdpi\tab_selected_focused_qms.9.png
+* res_new\drawable-xhdpi\tab_selected_pressed_qms.9.png
+* res_new\drawable-xhdpi\tab_selected_qms.9.png
+* res_new\drawable-xhdpi\tab_unselected_focused_qms.9.png
+* res_new\drawable-xhdpi\tab_unselected_pressed_qms.9.png
+* res_new\drawable-xhdpi\tab_unselected_qms.9.png
+* res_new\drawable-xxhdpi\
+* res_new\drawable-xxhdpi\ab_bottom_solid_qms.9.png
+* res_new\drawable-xxhdpi\ab_solid_qms.9.png
+* res_new\drawable-xxhdpi\ab_stacked_solid_qms.9.png
+* res_new\drawable-xxhdpi\ab_texture_tile_qms.png
+* res_new\drawable-xxhdpi\ab_transparent_qms.9.png
+* res_new\drawable-xxhdpi\btn_cab_done_default_qms.9.png
+* res_new\drawable-xxhdpi\btn_cab_done_focused_qms.9.png
+* res_new\drawable-xxhdpi\btn_cab_done_pressed_qms.9.png
+* res_new\drawable-xxhdpi\cab_background_bottom_qms.9.png
+* res_new\drawable-xxhdpi\cab_background_top_qms.9.png
+* res_new\drawable-xxhdpi\list_focused_qms.9.png
+* res_new\drawable-xxhdpi\list_pressed_qms.9.png
+* res_new\drawable-xxhdpi\menu_dropdown_panel_qms.9.png
+* res_new\drawable-xxhdpi\progress_bg_qms.9.png
+* res_new\drawable-xxhdpi\progress_primary_qms.9.png
+* res_new\drawable-xxhdpi\progress_secondary_qms.9.png
+* res_new\drawable-xxhdpi\spinner_ab_default_qms.9.png
+* res_new\drawable-xxhdpi\spinner_ab_disabled_qms.9.png
+* res_new\drawable-xxhdpi\spinner_ab_focused_qms.9.png
+* res_new\drawable-xxhdpi\spinner_ab_pressed_qms.9.png
+* res_new\drawable-xxhdpi\tab_selected_focused_qms.9.png
+* res_new\drawable-xxhdpi\tab_selected_pressed_qms.9.png
+* res_new\drawable-xxhdpi\tab_selected_qms.9.png
+* res_new\drawable-xxhdpi\tab_unselected_focused_qms.9.png
+* res_new\drawable-xxhdpi\tab_unselected_pressed_qms.9.png
+* res_new\drawable-xxhdpi\tab_unselected_qms.9.png
+* res_new\drawable\
+* res_new\drawable\ab_background_textured_qms.xml
+* res_new\drawable\btn_cab_done_qms.xml
+* res_new\drawable\progress_horizontal_qms.xml
+* res_new\drawable\selectable_background_qms.xml
+* res_new\drawable\spinner_background_ab_qms.xml
+* res_new\drawable\tab_indicator_ab_qms.xml
+* res_new\layout\
+* res_new\layout\activity_main.xml
+* res_new\menu\
+* res_new\menu\main.xml
+* res_new\values-v11\
+* res_new\values-v11\styles_qms.xml
+* res_new\values-v14\
+* res_new\values-v14\styles_qms.xml
+* res_new\values\
+* res_new\values\strings.xml
+* res_new\values\styles_qms.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\acra-4.5.0.jar => app\libs\acra-4.5.0.jar
+* libs\httpmime-4.1.2.jar => app\libs\httpmime-4.1.2.jar
+* libs\ksoap2-android-assembly-2.5.8-jar-with-dependencies.jar => app\libs\ksoap2-android-assembly-2.5.8-jar-with-dependencies.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\common\faltu code => app\src\main\resources\common\faltu code
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,18 @@
+ORMS 
+
+1. HPC--
+  1.1 - While Add Achievement with RO Maker---->after entering the remarks and Presiding Officer Of meeting--->then clearing both-->HPC achievement is getting add,
+        instead it message "Remarks is required" and "Presided is Required".
+  1.2 - Remarks and Presiding Field in Add Achievement taking space as characters,and Achievement is getting added successfully.Those Fields should not take space 
+        as Characters.
+
+2. Disbursement--
+   2.1 - While Add Achievement with RO Maker---->Sometimes "Select State" Option is not getting enable and not even the default state is getting visible there .
+   2.2 - Likely Disbursement and Actual Disbursement is not getting reflected in the view achievement with HO login even after the approval from the RO Checker .
+
+3. AMP--
+   3.1 - While Add new record with RO Maker ---->Sometimes "Select state" is not showing the default state.
+
+
+
+           
